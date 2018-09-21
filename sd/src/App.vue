@@ -7,9 +7,10 @@
         <code v-text="'<el-button>'"></code>
         below
       </p>
+      <router-link to="/Home">Go to Home</router-link>
       <el-button>el-button</el-button>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 

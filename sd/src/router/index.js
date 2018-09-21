@@ -10,4 +10,4 @@ export default [
   { path: '/Catalog', name: 'catalog', component: Catalog },
   { path: '/List', name: 'list', component: List },
   { path: '/Home', name: 'home', component: Home }
-];
+]
