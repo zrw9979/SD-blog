@@ -1,11 +1,14 @@
  /* eslint-disable */
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 // components
 import App from './App.vue'
 
+Vue.use(VueRouter)
+
 // router
-import routes from './router';
+import routes from './router'
 const router = new VueRouter({
   routes
 })
@@ -20,4 +23,4 @@ new Vue({
   el: "#app",
   router,
   render: h => h(App)
-}).$mount('#app')
+})
