@@ -27,7 +27,7 @@
 <script>
 // import http from '@/tools/http.client';
 export default {
-	name: 'HelloWorld',
+	name: 'Login',
 	data () {
 		return {
 			signIn: false,
@@ -37,8 +37,7 @@ export default {
 	},
 	methods: {
 		gotoHome() {
-			console.log('goto home home!!!!!')
-			this.$router.push({ name: 'home' })
+			this.$router.push({ name: '/' })
 		},
 		change() {
 			this.signIn = !this.signIn;
