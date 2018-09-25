@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <div class="catalog-title">Categories</div>
     <div class="catalog-list">
       <catalogItem
         class="catalog-item"
@@ -28,14 +29,19 @@ export default {
 
 <style scope>
 .main {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.catalog-title {
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #bfbfbf
 }
 
 .catalog-list {
   position: relative;
-  top: 30%;
+  margin-top: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;

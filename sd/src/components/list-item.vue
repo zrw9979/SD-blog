@@ -1,6 +1,6 @@
 <template>
   <div class="list-container">
-    <div class="artical-title">啥啥啥啥啥</div>
+    <div class="artical-title">{{title}}</div>
     <div class="list-bottom-container">
       <div class="time-container">
         <img src="../assets/clock.png" alt="时间："> {{time}}
@@ -17,6 +17,7 @@
 export default {
   name: 'listItem',
   props: {
+    title: String,
     id: String,
     time: String,
     catalog: Array
@@ -30,7 +31,7 @@ export default {
   width: 50%;
   margin: 3rem auto;
   padding: 1rem 2rem;
-  border: 3px solid #bfbfbf;
+  border-bottom: 3px solid #bfbfbf;
   border-radius: 1rem;
 }
 

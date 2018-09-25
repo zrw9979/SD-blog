@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header-container">
     <div class="intro-title">XXX's Blog</div>
     <ul class="menu-list">
       <li class="menu-list-content" @click="gotoList">
@@ -19,34 +19,23 @@
 </template>
 
 <script>
-
 export default {
-  name: 'home',
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-    gotoList() {
-      this.$router.push({ name: 'list' })      
-    },
-    gotoCatalog() {
-      this.$router.push({ name: 'catalog' })      
-    },
-    gotoLogOut() {
-      this.$router.push({ name: 'login' })
-    }
-  },
-  components: {
+  name: 'Header',
+  props: {
+    msg: String
   }
 }
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.header-container {
+  width: 100%;
+}
+
 .intro-title {
   width: 50%;
-  margin: 10rem auto 4rem auto;
+  margin: 4rem auto;
   padding: 3rem;
   font-size: 5rem;
   border-bottom: solid 5px #bbb;
